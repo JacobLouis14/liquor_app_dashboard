@@ -1,0 +1,15 @@
+.app {
+  display: flex;
+  height: 100vh;
+  background-color: rgb(249, 250, 251);
+  font-family: "Poppins";
+  overflow-x: hidden;
+}
+.mainContainer {
+  width: 100%;
+}
+@media (min-width: 992px) {
+  .mainContainer {
+    margin-left: 280px;
+  }
+}

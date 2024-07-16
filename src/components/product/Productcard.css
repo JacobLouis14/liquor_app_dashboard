@@ -1,0 +1,39 @@
+.btn-add {
+  background-color: rgba(137, 43, 226, 0.128);
+}
+.btn-add:hover {
+  background-color: blueviolet;
+  color: white;
+}
+.productCard {
+  /* background-color: rgba(145, 158, 171, 0.027); */
+  border-top: 1px dashed rgba(145, 158, 171, 0.13);
+}
+.productCard:hover {
+  cursor: pointer;
+}
+.productCard .product-image {
+  height: 230px;
+}
+.image-grid .uploaded-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 8px;
+}
+.remove-button {
+  color: rgba(255, 0, 0, 0.7);
+  border: none;
+  background-color: transparent;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.remove-button:hover {
+  color: rgba(255, 0, 0, 0.9);
+}
+@media (min-width: 992px) and (max-width: 1250px) {
+  .productCard .product-image {
+    height: 170px;
+  }
+}
