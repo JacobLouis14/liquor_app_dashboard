@@ -38,18 +38,17 @@ function Dashboard() {
   const overallData = [
     {
       name: "Produts",
-      image:
-        "public/Images/olive-oil-green-bottle_24908-83338-removebg-preview.png",
+      image: "Images/olive-oil-green-bottle_24908-83338-removebg-preview.png",
       number: useSelector((state) => state.productReducer.data.length),
     },
     {
       name: "Store",
-      image: "public/Images/store.png",
+      image: "Images/store.png",
       number: useSelector((state) => state.shopReducer.data.length),
     },
     {
       name: "Users",
-      image: "public/Images/users.png",
+      image: "Images/users.png",
       number: useSelector((state) => state.userReducer.data.length),
     },
   ];
