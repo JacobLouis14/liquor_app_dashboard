@@ -43,7 +43,7 @@ function App() {
   // Main Routes
   return (
     <>
-      {token && data ? (
+      {token || data ? (
         <div className="app">
           <Sidebar
             sideBarShow={sideBarShow}

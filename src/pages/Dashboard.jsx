@@ -39,17 +39,17 @@ function Dashboard() {
     {
       name: "Produts",
       image:
-        "src/assets/olive-oil-green-bottle_24908-83338-removebg-preview.png",
+        "public/Images/olive-oil-green-bottle_24908-83338-removebg-preview.png",
       number: useSelector((state) => state.productReducer.data.length),
     },
     {
       name: "Store",
-      image: "src/assets/store.png",
+      image: "public/Images/store.png",
       number: useSelector((state) => state.shopReducer.data.length),
     },
     {
       name: "Users",
-      image: "src/assets/users.png",
+      image: "public/Images/users.png",
       number: useSelector((state) => state.userReducer.data.length),
     },
   ];

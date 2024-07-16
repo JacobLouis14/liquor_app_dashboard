@@ -10,7 +10,7 @@ import { fetchAllProduct } from "../redux/slices/productSlice";
 function FirstBox({ productLength }) {
   const name = "Products";
   const image =
-    "src/assets/olive-oil-green-bottle_24908-83338-removebg-preview.png";
+    "public/Images/olive-oil-green-bottle_24908-83338-removebg-preview.png";
   const number = productLength;
   return <CardComponent name={name} image={image} number={number} />;
 }
