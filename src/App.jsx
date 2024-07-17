@@ -16,7 +16,7 @@ import LoginRedirector from "./components/common/LoginRedirector";
 
 function App() {
   const [sideBarShow, setSideBarShow] = useState(false);
-  const [token, setToken] = useState("");
+  const [token, setToken] = useState(localStorage.getItem("userToken"));
   const location = useLocation();
   const { data } = useSelector((state) => state.authReducer);
 
@@ -25,7 +25,10 @@ function App() {
   };
 
   useEffect(() => {
-    setToken(localStorage.getItem("userToken"));
+    const savedToken = localStorage.getItem("userToken");
+    if (savedToken) {
+      setToken(savedToken);
+    }
   }, [data]);
 
   // login routes
@@ -43,7 +46,7 @@ function App() {
   // Main Routes
   return (
     <>
-      {token || data.length > 0 ? (
+      {token ? (
         <div className="app">
           <Sidebar
             sideBarShow={sideBarShow}

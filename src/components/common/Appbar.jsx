@@ -3,13 +3,16 @@ import "./Appbar.css";
 import NotificationsIcon from "@mui/icons-material/Notifications";
 import { useDispatch } from "react-redux";
 import { logOutHandler } from "../../redux/slices/authSlice";
+import { useNavigate } from "react-router-dom";
 
 function Appbar({ sideBArToggleHandler }) {
   const dispatch = useDispatch();
+  const navigate = useNavigate();
 
   // logout handler
   const logOutController = () => {
     dispatch(logOutHandler());
+    navigate("/");
   };
 
   return (
