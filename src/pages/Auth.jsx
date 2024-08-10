@@ -38,7 +38,7 @@ function Auth() {
     if (data.IsAdmin && status >= 200 && status < 300) {
       const token = localStorage.getItem("userToken");
       if (token) {
-        navigate("/dashboard");
+        navigate("/dashboard", { replace: true });
         clearValueHandler();
       }
     }
