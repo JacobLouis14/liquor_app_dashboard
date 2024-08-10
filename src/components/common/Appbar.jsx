@@ -12,7 +12,7 @@ function Appbar({ sideBArToggleHandler }) {
   // logout handler
   const logOutController = () => {
     dispatch(logOutHandler());
-    navigate("/");
+    navigate("/", { replace: true });
   };
 
   return (
